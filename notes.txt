@@ -1,0 +1,48 @@
+Interesting takes on creating an "empty" object
+
+https://stackoverflow.com/questions/19476816/creating-an-empty-object-in-python
+
+but note (interestingly) that::
+
+  a = object()
+  a.x = 1
+
+will not work. Hmm.
+
+https://docs.python.org/3/library/functions.html#object
+
+::
+
+    >>> o = object()
+    >>> dir(o)
+    ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+
+so no __dict__, whereas::
+
+    >>> t = type('t',(),{})
+    >>> dir(t)
+    ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__']
+
+
+
+
+https://docs.python.org/3/library/functions.html#type
+
+https://docs.python.org/3/library/inspect.html
+
+https://docs.python.org/3/library/functions.html#compile
+
+------------
+
+Ruby - all functions are methods -> no need for explicit ``self`` in parameter
+list::
+
+    irb(main):005:1* def fn(a)
+    irb(main):006:1*   puts "self is #{self} #{self.inspect}"
+    irb(main):007:0> end
+    => :fn
+    irb(main):008:0> fn(1)
+    self is main main
+    => nil
+
+whereas in Python, every method is a function.
