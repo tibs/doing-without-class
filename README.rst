@@ -24,6 +24,8 @@ Run the notebook with::
 .. _poetry: https://python-poetry.org/
 .. _`jupyter notebook`: https://jupyter.readthedocs.io/en/latest/running.html#running
 
+I also like to enable vim bindings, using https://github.com/lambdalisue/jupyter-vim-binding
+
 --------
 
   |cc-attr-sharealike|

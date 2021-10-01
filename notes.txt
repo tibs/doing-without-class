@@ -46,3 +46,145 @@ list::
     => nil
 
 whereas in Python, every method is a function.
+
+
+Talk layout
+===========
+
+Programming without classes - like we used to have to do before OO was
+invented
+
+(although passing around ``context`` structures, and even adding
+pointers/references to functions to such ``context`` structures, must have
+been invented many times.)
+
+------
+
+Show a normal class.
+
+Use ``type`` on it.
+
+Make an instance from it (and introduce that term) and use ``type`` on that.
+
+Remind we can add a value to the class.
+
+Remind we can add a value to the instance.
+
+*Maybe* show how if ``a`` is defined on the class, and one changs
+``instance.a``, it doesn't change the class value - so one has default values.
+
+*Maybe* show how one *can* set the class value if you want.
+
+Remind how we can add a function to a class - and  call it on the instance.
+
+(and call ``type`` on the function)
+
+Oops - no ``self`` (missing argument)
+
+Repeat with ``self`` parameter.
+
+So: a method is a function, and it needs a first parameter which will be set
+to the instance (or, for a class method, the class)
+
+  Aside: in Ruby all functions are actually methods, so there's no need to pass
+  ``self`` explicitly - it's always there, so can be assume. Show the example
+  from above.
+
+Two ways to make a class at runtime:
+
+* an inner `class` with variables in the definition (because it's all just
+  executable code) - show this using a function...
+* a factory function, using ``type`` - it can even have the same name as the
+  class that ``type`` constructs
+
+Why might one use this?
+
+Let's look at the content of a class and an instance and a function.
+
+(and introduce the term introspection)
+
+* using ``dir``
+* using ``dis.dis`` on things
+* maybe use some ``inspect`` stuff
+
+Show we can swap the ``__code__`` from on function to another.
+
+Hmm - could we construct a class from an "empty" object?
+
+What is an empty object?
+
+* ``class Empty: pass; e = Empty()`` - but that's too simple!
+* ``type(name, (), {})`` - we may already have done this
+* ``object()`` - doesn't work, as it's immutable
+
+  (note that ``object`` is like ``int`` - one might expect it it to have a
+  capital letter, but it doesn't - show ``type(object)``)
+
+Hmm. We were able to swap ``__code__`` between functions.
+
+Show adding ``__doc__`` strings to a function, and doing ``help``
+
+Assign a lambda to the ``__code__`` (does that work?)
+
+Compile a lambda and ditto.
+
+Compile some lines and assign them to the ``__code__``. Does that work, and
+can I do anything about parameters?
+
+What else can we do to our poor function?
+
+(deliberately don't mention decorators!)
+
+Can we change its type?
+
+Can we change its ``__call__``? (what does that do in this context - explain
+what ``__call__`` is for)
+
+(I don't actually know if it's possible to turn a function into a "proper"
+class, or even a partial-form of a class, but it's probably worth deciding
+what we expect a class to do at this point, and then think about what we'd
+need to change, and then see if we can...)
+
+
+In closing, maybe mention:
+
+* slots (just briefly)
+* named tuples (the original sort)
+* NamedTuples (the newer sort)
+* attrs in Python
+* attrs the external package
+
+and reiterate that one of the things I love about Python (well, two) is
+
+* the first thing - that we don't need to use classes at all
+* the second thing - that Python exposes so much of its innards to us
+
+
+-------
+
+Interesting stackoverflow link:
+
+https://stackoverflow.com/questions/49701446/how-can-we-define-a-function-without-using-the-def-keyword
+
+Does the "create a class" thing, and then answers the "create a function"
+question too.
+
+https://docs.python.org/3/library/types.html#types.FunctionType
+
+  "If you instantiate any of these types, note that signatures may vary
+  between Python versions."
+
+Note that ``types.unction`` does not appear to "exist" despite the help for
+``types.FunctionType`` talking about ``class function``::
+
+  >>> type(types.FunctionType)
+  <class 'type'>
+  >>> types.FunctionType.__qualname__
+  'function'
+
+The (linked/related) answer at
+https://stackoverflow.com/questions/13184281/python-dynamic-function-creation-with-custom-names
+is also quite nice - ways to use inline ``def`` to construct functions, etc.
+
+At the end, that in turn has a reference to
+https://smarie.github.io/python-makefun/ (https://github.com/smarie/python-makefun)
