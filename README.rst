@@ -9,6 +9,8 @@ History
 
 The talk was (will be) given at CamPUG_ on Tuesday 5th October 2021.
 
+.. _CamPUG: https://www.meetup.com/CamPUG/events/280947413/
+
 Running the notebook
 ~~~~~~~~~~~~~~~~~~~~
 
