@@ -174,7 +174,7 @@ https://docs.python.org/3/library/types.html#types.FunctionType
   "If you instantiate any of these types, note that signatures may vary
   between Python versions."
 
-Note that ``types.unction`` does not appear to "exist" despite the help for
+Note that ``types.function`` does not appear to "exist" despite the help for
 ``types.FunctionType`` talking about ``class function``::
 
   >>> type(types.FunctionType)
@@ -188,3 +188,19 @@ is also quite nice - ways to use inline ``def`` to construct functions, etc.
 
 At the end, that in turn has a reference to
 https://smarie.github.io/python-makefun/ (https://github.com/smarie/python-makefun)
+
+Ah - on the assigning a function to an instance doesn't set it on the class
+issue:
+
+https://stackoverflow.com/questions/394770/override-a-method-at-instance-level
+
+  """The only reason that this works, by the way, is that instance attributes
+  override non-data descriptors. Data descriptors have __set__ methods, which
+  methods (fortunately for you) do not. Data descriptors in the class actually
+  take priority over any instance attributes. That is why you can assign to a
+  property: their __set__ method gets invoked when you try to make an
+  assignment."""
+
+  and magic methods are odder...
+
+although I may just want to avoid this whole thing...
