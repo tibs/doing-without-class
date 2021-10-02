@@ -204,3 +204,10 @@ https://stackoverflow.com/questions/394770/override-a-method-at-instance-level
   and magic methods are odder...
 
 although I may just want to avoid this whole thing...
+
+...possibly apart from referencing the Descriptor HowTo Guide, bu Raymond
+Hettinger: https://docs.python.org/3/howto/descriptor.html
+
+There's also
+https://stackoverflow.com/questions/66668746/how-does-python-turn-a-function-into-a-method
+although I didn't find that as helpful.
