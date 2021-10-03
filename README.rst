@@ -14,7 +14,7 @@ The talk was (will be) given at CamPUG_ on Tuesday 5th October 2021.
 Running the notebook
 ~~~~~~~~~~~~~~~~~~~~
 
-You can install `Jupyter notebook`_ and any other dependencies using poetry_::
+You can install `Jupyter notebook**_ and any other dependencies using poetry_::
 
   $ poetry install
 
@@ -27,6 +27,24 @@ Run the notebook with::
 .. _`jupyter notebook`: https://jupyter.readthedocs.io/en/latest/running.html#running
 
 I also like to enable vim bindings, using https://github.com/lambdalisue/jupyter-vim-binding
+
+**Note** that running the notebook changes its content (the results of all
+those code cells). If you haven't edited the notebook, these can be ignored.
+Otherwise, use ``git diff -u doing-without-class.ipynb`` to see if
+the changes are significant or not.
+
+The HTML version
+~~~~~~~~~~~~~~~~
+
+I've also saved the `notebook as HTML`_ in case that's easier to use than the
+notebok - you'll still need to clone this repository to read it, as github
+won't serve HTML pages.
+
+Alternatively, there's a `PDF version`_, but it's missing the `flowchart image`_
+
+.. _`notebook as HTML`: doing-without-class.html
+.. _`PDF version`: doing-without-class.pdf
+.. _`flowchart image`: am-i-a-writer.webp
 
 --------
 
