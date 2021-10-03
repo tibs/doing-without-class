@@ -34,7 +34,6 @@ I also like to enable vim bindings, using https://github.com/lambdalisue/jupyter
 
   This Jupyter notebook and its related files are released under a `Creative Commons
   Attribution-ShareAlike 4.0 International License`_.
-
   **except** for the flowchart image from
   https://terribleminds.com/ramble/2013/08/06/are-you-a-real-writer-a-handy-and-hasty-flowchart/
   which belongs to Chuck Wendig.
