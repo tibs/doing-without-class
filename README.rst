@@ -33,17 +33,21 @@ those code cells). If you haven't edited the notebook, these can be ignored.
 Otherwise, use ``git diff -u doing-without-class.ipynb`` to see if
 the changes are significant or not.
 
-The HTML version
-~~~~~~~~~~~~~~~~
+The HTML and PDF versions
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I've also saved the `notebook as HTML`_ in case that's easier to use than the
-notebok - you'll still need to clone this repository to read it, as github
-won't serve HTML pages.
+I've also saved the notebook as:
 
-Alternatively, there's a `PDF version`_, but it's missing the `flowchart image`_
+* `HTML slides`_
+* `HTML`
+* `PDF`_, although it's missing the `flowchart image`_
 
-.. _`notebook as HTML`: doing-without-class.html
-.. _`PDF version`: doing-without-class.pdf
+Since github won't serve HTML files, you will have to clone the repository
+locally to be able to display the HTML files.
+
+.. _`HTML slides`: doing-without-class.slides.html
+.. _`HTML`: doing-without-class.html
+.. _`PDF`: doing-without-class.pdf
 .. _`flowchart image`: am-i-a-writer.webp
 
 --------
