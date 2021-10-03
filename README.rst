@@ -39,7 +39,7 @@ The HTML and PDF versions
 I've also saved the notebook as:
 
 * `HTML slides`_
-* `HTML`
+* `HTML`_
 * `PDF`_, although it's missing the `flowchart image`_
 
 Since github won't serve HTML files, you will have to clone the repository
