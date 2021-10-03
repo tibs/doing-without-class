@@ -7,6 +7,7 @@ authors = ["Tibs <tibs@tonyibbs.co.uk>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 notebook = "^6.4.4"
+rise = "^5.7.1"
 
 [tool.poetry.dev-dependencies]
 
