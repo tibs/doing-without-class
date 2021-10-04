@@ -22,7 +22,7 @@ I could have changed the name, but instead I figured I'd do both talks.
 
 ## Part 1: Is it OK to write Python code without classes?
 
-**tldr;** Yes
+**tl;dr:** Yes
 
 Ideas:
     
@@ -131,9 +131,9 @@ I think Chuck Wendig's flowchart for ["Are you a real writer"](https://terriblem
 Summary:
     
 * Looking at a simple class
-* Can we define a class without class? (*tldr;* yes)
-* Can we construct an instance by hand? (*tldr;* yes-ish)
-* Can we create a function without using def? (*tldr;* sort-of no)
+* Can we define a class without class? (**tl;dr:** yes)
+* Can we construct an instance by hand? (**tl;dr:** yes-ish)
+* Can we create a function without using def? (**tl;dr:** sort-of no)
 
 ### Looking at a simple class
 
