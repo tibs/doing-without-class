@@ -50,7 +50,7 @@ I've also saved the notebook as:
 
 * `HTML slides`_ - you'll need to download this to use it
 * `HTML`_ - you'll need to download this to use it
-* reStructuredText_
+* markdown_ - this can be viewed in github
 * `PDF`_, although it's missing the `flowchart image`_ from
   https://terribleminds.com/ramble/2013/08/06/are-you-a-real-writer-a-handy-and-hasty-flowchart/
 
@@ -59,7 +59,7 @@ locally to be able to display the HTML files (or download the file and its
 dependencies).
 
 .. _`HTML slides`: doing-without-class.slides.html
-.. _`reStructuredText`: doing-without-class.rst
+.. _`markdown`: doing-without-class.md
 .. _`HTML`: doing-without-class.html
 .. _`PDF`: doing-without-class.pdf
 .. _`flowchart image`: am-i-a-writer.webp
