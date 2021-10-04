@@ -28,6 +28,12 @@ Run the notebook with::
 
 I also like to enable vim bindings, using https://github.com/lambdalisue/jupyter-vim-binding
 
+If you have installed RISE_ (which is in the poetry setup) then you can run
+the notebook as a slideshow - there should be an "Enter/Exit RISE slideshow"
+button in the notebook toolbar (it's a mini-picture of a histogram).
+
+.. _RISE: https://rise.readthedocs.io/en/stable/
+
 **Note** that running the notebook changes its content (the results of all
 those code cells). If you haven't edited the notebook, these can be ignored.
 Otherwise, use ``git diff -u doing-without-class.ipynb`` to see if
