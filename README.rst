@@ -14,13 +14,17 @@ The talk was (will be) given at CamPUG_ on Tuesday 5th October 2021.
 Running the notebook
 ~~~~~~~~~~~~~~~~~~~~
 
-You can install `Jupyter notebook**_ and any other dependencies using poetry_::
+This requires Python3 and `jupyter notebook`_
 
+Clone this repository, and ``cd`` into its directory.
+
+If you have poetry_, then set up the environment and dependencies as follows::
+
+  $ poetry shell
   $ poetry install
 
 Run the notebook with::
 
-  $ poetry shell
   $ jupyter notebook doing-without-class.ipynb
 
 .. _poetry: https://python-poetry.org/
